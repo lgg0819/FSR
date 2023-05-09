@@ -1,0 +1,72 @@
+
+	c1 = TCanvas("c1","Top Quark Invariant Mass Distribution_DL", 900,600)
+        c2 = TCanvas("c2","W Boson Invariant Mass Distribution_DL", 900,600)
+
+        hist_t = TH1D("hist_t","Top Quark Invariant Mass Distribution_DL", 20,0,300)
+        hist_w = TH1D("hist_w","W Boson Invariant Mass Distribution_DL", 20,10,130)
+
+        for i in range(len(tt)):
+                hist_t.Fill(tt[i])
+                hist_w.Fill(ww[i])
+
+        hist_t.GetXaxis().SetTitle("Top Mass [GeV]")
+        hist_t.GetYaxis().SetTitle("Entries")
+
+        hist_w.GetXaxis().SetTitle("W Mass [GeV]")
+        hist_w.GetYaxis().SetTitle("Entries")
+
+        c1.cd()
+        hist_t.Draw()
+        c1.SaveAs("t_mass.png")
+
+        c2.cd()
+        hist_w.Draw()
+        c2.SaveAs("w_mass.png")
+
+
+
+
+
+	c1 = TCanvas("c1","Higgs Boson Invariant Mass Distribution_DL", 900,600)
+        c2 = TCanvas("c2","W_onshell Invariant Mass Distribution_DL", 900,600)
+        c3 = TCanvas("c3","W_offshell Invariant Mass Distribution_DL", 900,600)
+        c4 = TCanvas("c4","Dilepton Invariant Mass Distribution_DL", 900,600)
+
+        hist_h = TH1D("hist_h","Higgs Boson Invariant Mass Distribution_DL", 20,0,300)
+        hist_on = TH1D("hist_on","W_onshell Invariant Mass Distribution_DL", 20,10,130)
+        hist_off = TH1D("hist_off","W_offshell Invariant Mass Distribution_DL", 20,10,200)
+        hist_dl = TH1D("hist_dl","Dilepton Invariant Mass Distribution_DL", 20,10,200)
+
+        for i in range(len(hgg)):
+                hist_h.Fill(hgg[i])
+                hist_on.Fill(w_on[i])
+                hist_off.Fill(w_off[i])
+                hist_dl.Fill(dl[i])
+
+        hist_h.GetXaxis().SetTitle("H Mass [GeV]")
+        hist_h.GetYaxis().SetTitle("Entries")
+
+        hist_on.GetXaxis().SetTitle("W_onshell Mass [GeV]")
+        hist_on.GetYaxis().SetTitle("Entries")
+
+        hist_off.GetXaxis().SetTitle("W_offshell Mass [GeV]")
+        hist_off.GetYaxis().SetTitle("Entries")
+
+        hist_dl.GetXaxis().SetTitle("Dilepton Mass [GeV]")
+        hist_dl.GetYaxis().SetTitle("Entries")
+
+        c1.cd()
+        hist_h.Draw()
+        c1.SaveAs("h_mass.png")
+
+        c2.cd()
+        hist_on.Draw()
+        c2.SaveAs("w_on_mass.png")
+
+        c3.cd()
+        hist_off.Draw()
+        c3.SaveAs("w_off_mass.png")
+
+        c4.cd()
+        hist_dl.Draw()
+        c4.SaveAs("dl_mass.png")

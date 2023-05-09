@@ -1,0 +1,36 @@
+{
+
+	"run2017B_mu1":{
+		"dataset":"/xrootd/store/data/Run2017B/SingleMuon/NANOAOD/Nano1June2019-v1/110000/*"
+	},
+	"run2017B_mu2":{
+                "dataset":"/xrootd/store/data/Run2017B/SingleMuon/NANOAOD/Nano1June2019-v1/30000/*"
+        },
+	"run2017B_mu3":{
+                "dataset":"/xrootd/store/data/Run2017B/SingleMuon/NANOAOD/Nano1June2019-v1/40000/*"
+        },
+
+	"run2017C_mu1":{
+		"dataset":"/xrootd/store/data/Run2017C/SingleMuon/NANOAOD/Nano1June2019-v1/30000/*"
+	},
+
+	"run2017D_mu1":{
+		"dataset":"/xrootd/store/data/Run2017D/SingleMuon/NANOAOD/Nano1June2019-v1/40000/*"
+	},
+
+	"run2017E_mu1":{
+		"dataset":"/xrootd/store/data/Run2017E/SingleMuon/NANOAOD/Nano1June2019-v1/40000/*"
+	},
+
+	"run2017F_mu1":{
+		"dataset":"/xrootd/store/data/Run2017F/SingleMuon/NANOAOD/Nano1June2019-v1/30000/*"
+	},
+	"run2017F_mu2":{ 
+                "dataset":"/xrootd/store/data/Run2017F/SingleMuon/NANOAOD/Nano1June2019-v1/40000/*"
+        },
+	"run2017F_mu3":{
+                "dataset":"/xrootd/store/data/Run2017F/SingleMuon/NANOAOD/Nano1June2019-v1/710000/*"
+        }
+
+}
+
